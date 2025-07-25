@@ -65,6 +65,13 @@ const SplashScreen = ({ onComplete }) => {
           </div>
         </div>
       </div>
+
+      {/* Footer Copyright */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <p className="text-gray-600 text-xs text-center">
+          © 2025 Sandith Sithmaka Thenuwara. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 };
