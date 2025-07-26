@@ -2,42 +2,89 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="px-12 py-20">
-      <div className="max-w-4xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16">
+    <section id="about" className="px-12 py-20 ">
+      <div className="max-w-6xl mx-auto">
+        
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-light mb-4">About</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Designer • Developer • Creative Thinker
+          </p>
+        </div>
+
+          <div className="grid lg:grid-cols-3 gap-12">
           
-          <div>
-            <h2 className="text-3xl font-light mb-6">About</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              I'm Sandith, a Computer Science student at IIT with a passion for design thinking. 
-              I believe great products start with understanding people, not technology.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Currently leading design initiatives at IEEE and working on healthcare and 
-              tourism platforms that solve real problems through thoughtful design.
-            </p>
+          {/* Main About */}
+          <div className="lg:col-span-2">
+            <h3 className="text-xl font-medium mb-6">The Story</h3>
+            <div className="space-y-4 text-gray-600 leading-relaxed">
+              <p>
+                I'm Sandith, a Computer Science student at IIT who believes in the power of 
+                <span className="text-black font-medium"> visual thinking</span>. My approach combines 
+                analytical problem-solving with creative intuition.
+              </p>
+              <p>
+                My creative journey spans <span className="text-black font-medium">brand identity design</span>, 
+                <span className="text-black font-medium"> video creation</span>, and 
+                <span className="text-black font-medium"> photography</span>. I've always been 
+                drawn to creating visual experiences that resonate and tell meaningful stories.
+              </p>
+              <p>
+                Currently leading <span className="text-black font-medium">design initiatives at IEEE</span> 
+                and crafting solutions for healthcare and tourism platforms. I even dabbled in 
+                <span className="text-black font-medium"> music production and songwriting</span> back in the day, 
+                which taught me about rhythm, composition, and emotional storytelling.
+              </p>
+            </div>
           </div>
 
+          {/* Skills Grid */}
           <div>
-            <h3 className="text-lg font-medium mb-6">Skills</h3>
-            <div className="space-y-4">
-              <div>
-                <div className="text-sm text-gray-600 mb-1">UI/UX Design</div>
-                <div className="text-xs text-gray-500">User Research, Prototyping, Design Systems</div>
+            <h3 className="text-xl font-medium mb-6">Creative Arsenal</h3>
+            <div className="space-y-6">
+              
+              <div className="border-l-2 border-gray-300 pl-4">
+                <div className="text-sm font-medium text-gray-900 mb-1">Visual Design</div>
+                <div className="text-xs text-gray-500 leading-relaxed">
+                  UI/UX Design, Brand Identity, Graphic Design, Photography, Design Systems
+                </div>
               </div>
-              <div>
-                <div className="text-sm text-gray-600 mb-1">Brand Design</div>
-                <div className="text-xs text-gray-500">Identity, Guidelines, Marketing Materials</div>
+
+              <div className="border-l-2 border-gray-300 pl-4">
+                <div className="text-sm font-medium text-gray-900 mb-1">Creative Direction</div>
+                <div className="text-xs text-gray-500 leading-relaxed">
+                  Campaign Design, Event Branding, Video Creation, Merchandise Design
+                </div>
               </div>
-              <div>
-                <div className="text-sm text-gray-600 mb-1">Development</div>
-                <div className="text-xs text-gray-500">React, Node.js, Tailwind CSS</div>
+
+              <div className="border-l-2 border-gray-300 pl-4">
+                <div className="text-sm font-medium text-gray-900 mb-1">Digital Craft</div>
+                <div className="text-xs text-gray-500 leading-relaxed">
+                  React, Node.js, Tailwind CSS, Prototyping, User Research
+                </div>
               </div>
-              <div>
-                <div className="text-sm text-gray-600 mb-1">Creative Direction</div>
-                <div className="text-xs text-gray-500">Strategy, Team Leadership, Campaign Design</div>
+
+              <div className="border-l-2 border-gray-300 pl-4">
+                <div className="text-sm font-medium text-gray-900 mb-1">Creative Exploration</div>
+                <div className="text-xs text-gray-500 leading-relaxed">
+                  Music Production, Songwriting, Visual Storytelling, Content Creation
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Creative Philosophy */}
+        <div className="mt-16 pt-12 border-t border-gray-200">
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-lg font-medium mb-4">Design Philosophy</h3>
+            <p className="text-gray-600 leading-relaxed">
+                "Great design isn't just about how it looks—it's about how it thinks. 
+              Every pixel, every interaction, every brand moment should tell a story 
+              and solve a problem. My multidisciplinary background in music, visual design, 
+              and technology allows me to approach problems from unexpected angles."
+            </p>
           </div>
         </div>
       </div>

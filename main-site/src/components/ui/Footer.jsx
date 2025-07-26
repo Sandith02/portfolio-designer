@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="px-12 py-8 text-center">
       <div className="text-xs text-gray-500">
-        © 2025 Sandith Thenuwara
+        © 2025 Sandith Sithmaka Thenuwara
       </div>
     </footer>
   );
