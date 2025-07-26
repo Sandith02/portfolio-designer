@@ -117,9 +117,9 @@ const DesignGallery = () => {
           <div className="block lg:hidden">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-light mb-6 leading-tight text-gray-900">
-                Create Stunning Design
+                Drop of my Creativity
                 <br />
-                <span className="font-medium">Projects Instantly</span>
+                <span className="font-medium">feel it❤️‍🔥</span>
               </h2>
               
               <p className="text-lg text-gray-600 mb-8 leading-relaxed px-4">
@@ -209,9 +209,9 @@ const DesignGallery = () => {
             <div className="absolute inset-0 flex items-center justify-center z-10">
               <div className="text-center max-w-2xl">
                 <h2 className="text-5xl lg:text-6xl font-light mb-6 leading-tight text-gray-900">
-                  Create Stunning Design
+                  Drop of my Creativity
                   <br />
-                  <span className="font-medium">Projects Instantly</span>
+                  <span className="font-medium">feel it❤️‍🔥</span>
                 </h2>
                 
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -219,11 +219,11 @@ const DesignGallery = () => {
                   and innovative solutions.
                 </p>
 
-                <button className="bg-black text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors shadow-lg inline-flex items-center">
-                  <span className="mr-3">Start Exploring Now</span>
+                <button className="bg-black text-white px-8 py-4 rounded-full text-sm font-medium transition-colors shadow-lg inline-flex items-center">
+                  <span className="mr-3">Scroll to Explore</span>
                   <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
                     <svg className="w-3 h-3 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
                 </button>
@@ -249,21 +249,21 @@ const DesignGallery = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h4 className="text-xl font-medium mb-2">IEEE RAS Event Branding</h4>
-                  <p className="text-sm text-gray-500 mb-4">Design Vice Chair • 2025</p>
+                  <p className="text-sm text-gray-500 mb-4">Vice Chair & Volunteer • 2024 - Present</p>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Led visual identity for MicroMaze 2.0, Traction 01, and Robotnexus events. 
-                    Created cohesive brand experiences across digital and print materials.
+                    Leading the visual identity for MicroMaze 2.0 as Public Visibility Vice Chair, led Traction 01 as Design Vice Chair, and contributed to Robotnexus 02 as a volunteer. 
                   </p>
                 </div>
                 <div className="md:col-span-2">
                   <div className="flex flex-wrap gap-3">
-                    <a href="https://instagram.com/ieee_ras_iit" target="_blank" rel="noopener noreferrer" 
+                    <a href="https://www.instagram.com/ieeeras_iit/" target="_blank" rel="noopener noreferrer" 
                        className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
                       Instagram
                     </a>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Brand Identity</span>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Event Design</span>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Leadership</span>
+                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Marketing</span>
                   </div>
                 </div>
               </div>
@@ -274,10 +274,10 @@ const DesignGallery = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h4 className="text-xl font-medium mb-2">DoctorAid Healthcare Platform</h4>
-                  <p className="text-sm text-gray-500 mb-4">Lead Designer & Project Leader • 2024</p>
+                  <p className="text-sm text-gray-500 mb-4">Lead Designer & Project Leader • 2024 - 2025</p>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Complete UI/UX design for healthcare platform. Designed web app for doctors 
-                    and mobile app for patients, focusing on accessibility and user experience.
+                    Led the UI/UX design process for a healthcare platform. Designed web app for doctors
+                    and mobile app for patients, focusing on accessibility and user experience. Did the marketing and branding for the platform.
                   </p>
                 </div>
                 <div className="md:col-span-2">
@@ -286,7 +286,7 @@ const DesignGallery = () => {
                        className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
                       Website
                     </a>
-                    <a href="https://instagram.com/doctoraid_official" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/doctoraid.official" target="_blank" rel="noopener noreferrer"
                        className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
                       Instagram
                     </a>
@@ -296,6 +296,7 @@ const DesignGallery = () => {
                     </a>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">UI/UX Design</span>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Healthcare</span>
+                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Poster Design</span>
                   </div>
                 </div>
               </div>
@@ -305,21 +306,18 @@ const DesignGallery = () => {
             <div className="border-b border-gray-100 pb-12">
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
-                  <h4 className="text-xl font-medium mb-2">Saint Aloysius Rugby Logo</h4>
-                  <p className="text-sm text-gray-500 mb-4">Creative Design Lead • 2024</p>
+                  <h4 className="text-xl font-medium mb-2">School's Brand Identity</h4>
+                  <p className="text-sm text-gray-500 mb-4">Creative Design Lead • 2018 - 2021</p>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Official rugby team logo design representing team spirit and heritage. 
-                    Used across all team materials and merchandise.
+                    Official rugby team logo design representing team spirit and heritage
+                    and managed comprehensive design projects across
+                    academic contexts.  
                   </p>
                 </div>
                 <div className="md:col-span-2">
                   <div className="flex flex-wrap gap-3">
-                    <a href="https://behance.net/sandith" target="_blank" rel="noopener noreferrer"
-                       className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
-                      Behance
-                    </a>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Logo Design</span>
-                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Sports Branding</span>
+                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Poster Design</span>
                   </div>
                 </div>
               </div>
@@ -329,25 +327,27 @@ const DesignGallery = () => {
             <div className="border-b border-gray-100 pb-12">
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
-                  <h4 className="text-xl font-medium mb-2">Villa Management Interface</h4>
+                  <h4 className="text-xl font-medium mb-2">Villa Management, Marketing</h4>
                   <p className="text-sm text-gray-500 mb-4">Designer & Developer • 2025</p>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    QR-based villa booking interface focused on tourist experience. 
-                    Mobile-first design for seamless villa discovery and booking.
+                    Management and marketing for family-owned villa business.
+                    Developed a QR-based villa booking interface focused on tourist experience.
+                    Mobile-first design as "web-as-app" for seamless villa discovery and booking.
                   </p>
                 </div>
                 <div className="md:col-span-2">
                   <div className="flex flex-wrap gap-3">
-                    <a href="https://villa-demo.vercel.app" target="_blank" rel="noopener noreferrer"
+                    <a href="https://the-villa-54.vercel.app/" target="_blank" rel="noopener noreferrer"
                        className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
                       Demo
                     </a>
-                    <a href="https://github.com/sandith02/villa-management" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/Sandith02/glamour_tech_villa_management_suite" target="_blank" rel="noopener noreferrer"
                        className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
                       GitHub
                     </a>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Web Design</span>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Tourism UX</span>
+                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">web-as-app concept</span>
                   </div>
                 </div>
               </div>
@@ -357,10 +357,10 @@ const DesignGallery = () => {
             <div className="border-b border-gray-100 pb-12">
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
-                  <h4 className="text-xl font-medium mb-2">SACMUNC & YDMUN Leadership</h4>
+                  <h4 className="text-xl font-medium mb-2">SACMUNC & YDMUN Branding</h4>
                   <p className="text-sm text-gray-500 mb-4">Head of International Press Corps • 2019</p>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Led International Press Corps division at premier Model United Nations conferences. 
+                    Led International Press Corps division at premier Model United Nations conference of the school. 
                     Managed media strategy, coordinated public relations, and oversaw international diplomatic event coverage.
                   </p>
                 </div>
@@ -388,11 +388,12 @@ const DesignGallery = () => {
                 </div>
                 <div className="md:col-span-2">
                   <div className="flex flex-wrap gap-3">
+                    <a href="https://www.youtube.com/@MoonInTwoMusic" target="_blank" rel="noopener noreferrer"
+                       className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
+                      YouTube
+                    </a>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Music Creation</span>
-                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">AI Voice Technology</span>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Lyric Writing</span>
-                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Independent Artist</span>
-                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Creative Innovation</span>
                   </div>
                 </div>
               </div>
@@ -402,25 +403,25 @@ const DesignGallery = () => {
             <div>
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
-                  <h4 className="text-xl font-medium mb-2">Creative Explorations</h4>
-                  <p className="text-sm text-gray-500 mb-4">Creative Explorer • 2024-2025</p>
+                  <h4 className="text-xl font-medium mb-2">Photography & Exploration</h4>
+                  <p className="text-sm text-gray-500 mb-4">Visual Storyteller </p>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Personal design experiments including typography studies and visual compositions. 
-                    Showcasing creative problem-solving and experimental design techniques.
+                    Focuses on landscape, portrait, and street photography with emphasis on visual storytelling
                   </p>
                 </div>
                 <div className="md:col-span-2">
                   <div className="flex flex-wrap gap-3">
-                    <a href="https://behance.net/sandith" target="_blank" rel="noopener noreferrer"
+                    {/* <a href="https://behance.net/sandith" target="_blank" rel="noopener noreferrer"
                        className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
                       Behance
                     </a>
                     <a href="https://instagram.com/thedesignerinme" target="_blank" rel="noopener noreferrer"
                        className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
                       Instagram
-                    </a>
-                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Typography</span>
-                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Experimental</span>
+                    </a> */}
+                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Visual Storytelling</span>
+                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Street Photography</span>
+                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Nature Photography</span>
                   </div>
                 </div>
               </div>

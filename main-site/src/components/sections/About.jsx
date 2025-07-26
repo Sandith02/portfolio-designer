@@ -20,7 +20,7 @@ const About = () => {
             <h3 className="text-xl font-medium mb-6">The Story</h3>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                I'm Sandith, a Computer Science student at IIT affialiated with UOW who believes in the power of 
+                I'm Sandith Sithmaka, a Computer Science student at IIT affialiated with UOW, a alumnus of St. Aloysius' College, Galle who believes in the power of 
                 <span className="text-black font-medium"> visual thinking</span>. My approach combines 
                 analytical problem-solving with creative intuition.
               </p>
