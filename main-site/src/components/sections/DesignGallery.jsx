@@ -107,54 +107,22 @@ const DesignGallery = () => {
   ];
 
   return (
-    <section id="design" className="px-12 py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden min-h-screen">
+    <section id="design" className="px-4 md:px-12 py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden min-h-screen">
       <div className="max-w-7xl mx-auto">
         
-        {/* Floating Design Cards in Circle */}
-        <div className="relative h-[700px] mb-20">
+        {/* Hero Section - Mobile First Approach */}
+        <div className="relative mb-20">
           
-          {/* Design Work Cards */}
-          {designCards.map((card) => (
-            <div
-              key={card.id}
-              className={`absolute ${card.position} ${card.rotation} ${card.size} cursor-pointer transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-30`}
-              onMouseEnter={() => setHoveredCard(card.id)}
-              onMouseLeave={() => setHoveredCard(null)}
-            >
-              <div className="w-full h-full bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500">
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="w-full h-full object-cover"
-                />
-                
-                {/* Hover Overlay with Info */}
-                <div className={`absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center transition-opacity duration-300 ${
-                  hoveredCard === card.id ? 'opacity-100' : 'opacity-0'
-                }`}>
-                  <div className="text-white text-center p-3">
-                    <div className="text-xs font-medium mb-1 uppercase tracking-wider opacity-80">
-                      {card.category}
-                    </div>
-                    <div className="text-sm font-semibold leading-tight">
-                      {card.title}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-
-          {/* Center Content */}
-          <div className="absolute inset-0 flex items-center justify-center z-10">
-            <div className="text-center max-w-2xl">
-              <h2 className="text-5xl lg:text-6xl font-light mb-6 leading-tight text-gray-900">
+          {/* Mobile Grid Layout (Hidden on Desktop) */}
+          <div className="block lg:hidden">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-light mb-6 leading-tight text-gray-900">
                 Create Stunning Design
                 <br />
                 <span className="font-medium">Projects Instantly</span>
               </h2>
               
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed px-4">
                 Transform your ideas into breathtaking visuals with creative design thinking 
                 and innovative solutions.
               </p>
@@ -167,6 +135,99 @@ const DesignGallery = () => {
                   </svg>
                 </div>
               </button>
+            </div>
+
+            {/* Mobile Grid of Design Cards */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 px-4">
+              {designCards.slice(0, 9).map((card) => (
+                <div
+                  key={card.id}
+                  className="aspect-square cursor-pointer transition-all duration-500 hover:scale-105"
+                  onTouchStart={() => setHoveredCard(card.id)}
+                  onTouchEnd={() => setHoveredCard(null)}
+                >
+                  <div className="w-full h-full bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-500 relative">
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="w-full h-full object-cover"
+                    />
+                    
+                    {/* Mobile Overlay - Always visible but subtle */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end justify-center p-3">
+                      <div className="text-white text-center">
+                        <div className="text-xs font-medium mb-1 uppercase tracking-wider opacity-90">
+                          {card.category}
+                        </div>
+                        <div className="text-xs font-semibold leading-tight">
+                          {card.title}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Desktop Circular Layout (Hidden on Mobile) */}
+          <div className="hidden lg:block relative h-[700px]">
+            
+            {/* Design Work Cards */}
+            {designCards.map((card) => (
+              <div
+                key={card.id}
+                className={`absolute ${card.position} ${card.rotation} ${card.size} cursor-pointer transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-30`}
+                onMouseEnter={() => setHoveredCard(card.id)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="w-full h-full bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="w-full h-full object-cover"
+                  />
+                  
+                  {/* Hover Overlay with Info */}
+                  <div className={`absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center transition-opacity duration-300 ${
+                    hoveredCard === card.id ? 'opacity-100' : 'opacity-0'
+                  }`}>
+                    <div className="text-white text-center p-3">
+                      <div className="text-xs font-medium mb-1 uppercase tracking-wider opacity-80">
+                        {card.category}
+                      </div>
+                      <div className="text-sm font-semibold leading-tight">
+                        {card.title}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {/* Center Content */}
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="text-center max-w-2xl">
+                <h2 className="text-5xl lg:text-6xl font-light mb-6 leading-tight text-gray-900">
+                  Create Stunning Design
+                  <br />
+                  <span className="font-medium">Projects Instantly</span>
+                </h2>
+                
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                  Transform your ideas into breathtaking visuals with creative design thinking 
+                  and innovative solutions.
+                </p>
+
+                <button className="bg-black text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors shadow-lg inline-flex items-center">
+                  <span className="mr-3">Start Exploring Now</span>
+                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -292,35 +353,7 @@ const DesignGallery = () => {
               </div>
             </div>
 
-            {/* Creative Explorations */}
-            <div>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div>
-                  <h4 className="text-xl font-medium mb-2">Creative Explorations</h4>
-                  <p className="text-sm text-gray-500 mb-4">Creative Explorer • 2024-2025</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Personal design experiments including typography studies and visual compositions. 
-                    Showcasing creative problem-solving and experimental design techniques.
-                  </p>
-                </div>
-                <div className="md:col-span-2">
-                  <div className="flex flex-wrap gap-3">
-                    <a href="https://behance.net/sandith" target="_blank" rel="noopener noreferrer"
-                       className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
-                      Behance
-                    </a>
-                    <a href="https://instagram.com/thedesignerinme" target="_blank" rel="noopener noreferrer"
-                       className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
-                      Instagram
-                    </a>
-                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Typography</span>
-                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Experimental</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-              {/* SACMUNC & YDMUN Leadership */}
+            {/* SACMUNC & YDMUN Leadership */}
             <div className="border-b border-gray-100 pb-12">
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
@@ -360,6 +393,34 @@ const DesignGallery = () => {
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Lyric Writing</span>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Independent Artist</span>
                     <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Creative Innovation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Creative Explorations */}
+            <div>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="text-xl font-medium mb-2">Creative Explorations</h4>
+                  <p className="text-sm text-gray-500 mb-4">Creative Explorer • 2024-2025</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Personal design experiments including typography studies and visual compositions. 
+                    Showcasing creative problem-solving and experimental design techniques.
+                  </p>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="flex flex-wrap gap-3">
+                    <a href="https://behance.net/sandith" target="_blank" rel="noopener noreferrer"
+                       className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
+                      Behance
+                    </a>
+                    <a href="https://instagram.com/thedesignerinme" target="_blank" rel="noopener noreferrer"
+                       className="text-xs px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
+                      Instagram
+                    </a>
+                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Typography</span>
+                    <span className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Experimental</span>
                   </div>
                 </div>
               </div>
