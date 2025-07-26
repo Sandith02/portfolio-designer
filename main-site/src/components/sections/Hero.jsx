@@ -14,7 +14,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              UI/UX Designer and Creative Technologist crafting meaningful 
+              Creative Designer, brand strategist, UI/UX enthusiast, and Technologist crafting meaningful
               digital experiences through research-driven design.
             </p>
             

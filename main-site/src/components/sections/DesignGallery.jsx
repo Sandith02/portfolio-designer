@@ -107,7 +107,7 @@ const DesignGallery = () => {
   ];
 
   return (
-    <section id="design" className="px-4 md:px-12 py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden min-h-screen">
+    <section id="design" className="px-4 md:px-12 py-20  relative overflow-hidden min-h-screen">
       <div className="max-w-7xl mx-auto">
         
         {/* Hero Section - Mobile First Approach */}
