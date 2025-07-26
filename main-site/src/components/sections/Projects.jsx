@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: "IEEE Design Leadership",
       subtitle: "Creative Direction",
-      description: "Leading visual design for major events - posters, merchandise, and brand campaigns.",
+      description: "Leading isual design for major events - posters, merchandise, and brand campaigns.",
       year: "2025"
     }
   ];
