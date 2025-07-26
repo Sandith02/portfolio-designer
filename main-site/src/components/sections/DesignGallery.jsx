@@ -8,7 +8,7 @@ const DesignGallery = () => {
     {
       id: 1,
       image: "/ydmun.jpg",
-      title: "IEEE RAS Branding",
+      title: "YDMUN Branding",
       category: "Brand Identity",
       position: "top-16 left-16",
       rotation: "-rotate-12",
@@ -17,8 +17,8 @@ const DesignGallery = () => {
     {
       id: 2,
       image: "/WADP-1.png",
-      title: "DoctorAid Interface",
-      category: "UI/UX Design",
+      title: "Traction 01 - Design VC",
+      category: "IEEE Branding",
       position: "top-8 left-64",
       rotation: "rotate-6",
       size: "w-36 h-28"
@@ -26,8 +26,8 @@ const DesignGallery = () => {
     {
       id: 3,
       image: "/sacmunc.jpg",
-      title: "Rugby Team Logo",
-      category: "Logo Design",
+      title: "SACMUNC Branding",
+      category: "Brand Identity",
       position: "top-20 right-20",
       rotation: "rotate-15",
       size: "w-32 h-32"
@@ -35,8 +35,8 @@ const DesignGallery = () => {
     {
       id: 4,
       image: "/TV54FDPS1.png",
-      title: "Typography Study",
-      category: "Creative Work",
+      title: "Villa 54 Branding",
+      category: "Brand Identity",
       position: "top-56 right-8",
       rotation: "-rotate-8",
       size: "w-28 h-36"
@@ -44,8 +44,8 @@ const DesignGallery = () => {
     {
       id: 5,
       image: "/WhatsApp Image 2024-11-29 at 03.51.04_2b770cea.jpg",
-      title: "Villa Booking UI",
-      category: "Web Design",
+      title: "SAC Rugby",
+      category: "Brand Identity",
       position: "bottom-32 right-16",
       rotation: "rotate-12",
       size: "w-40 h-32"
@@ -53,8 +53,8 @@ const DesignGallery = () => {
     {
       id: 6,
       image: "/WhatsApp Image 2024-11-29 at 03.49.31_596e4484.jpg",
-      title: "Event Materials",
-      category: "Print Design",
+      title: "Club Branding",
+      category: "Brand Identity",
       position: "bottom-16 right-64",
       rotation: "-rotate-6",
       size: "w-32 h-28"
@@ -62,8 +62,8 @@ const DesignGallery = () => {
     {
       id: 7,
       image: "/SimpleTickets.png",
-      title: "Mobile App Design",
-      category: "App Design",
+      title: "Simple Tickets",
+      category: "Web Design",
       position: "bottom-20 left-20",
       rotation: "rotate-9",
       size: "w-28 h-40"
@@ -71,8 +71,8 @@ const DesignGallery = () => {
     {
       id: 8,
       image: "/Untitled-2.png",
-      title: "Brand Strategy",
-      category: "Visual Identity",
+      title: "Song writing",
+      category: "Music",
       position: "bottom-48 left-8",
       rotation: "-rotate-15",
       size: "w-36 h-32"
@@ -80,8 +80,8 @@ const DesignGallery = () => {
     {
       id: 9,
       image: "/Main.png",
-      title: "Creative Exploration",
-      category: "Experimental",
+      title: "MicroMaze 2.0",
+      category: "IEEE Branding",
       position: "top-48 left-32",
       rotation: "rotate-3",
       size: "w-26 h-32"
