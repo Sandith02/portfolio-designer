@@ -44,11 +44,11 @@ const SplashScreen = ({ onComplete }) => {
 
         {/* Name */}
         <h1 className="text-4xl font-bold text-white mb-2">
-          Sandith Sithmaka Thenuwara
+          #TheDesignerInMe
         </h1>
        
         <p className="text-gray-500 mb-8">
-          My Designer Portfolio
+          My Creator Portfolio
         </p>
 
         {/* Progress */}
