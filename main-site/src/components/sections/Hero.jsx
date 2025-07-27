@@ -62,26 +62,24 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className={`px-4 md:px-12 flex items-center pt-16 md:pt-20 ${
-        isMobile 
-          ? 'min-h-screen' 
-          : 'h-screen'
-      }`}
-      style={!isMobile ? {
-        height: 'calc(var(--vh, 1vh) * 100)'
-      } : {
-        minHeight: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
-        height: 'calc(100dvh - 4rem)' // dvh is the dynamic viewport height, minus header
+      className="px-4 md:px-12 flex items-center pt-20 pb-8 md:pt-20 md:pb-0"
+      style={{
+        minHeight: isMobile 
+          ? 'calc(100vh - 80px)' // Subtract navbar height
+          : 'calc(var(--vh, 1vh) * 100)',
+        height: isMobile 
+          ? 'calc(100vh - 80px)'
+          : 'calc(var(--vh, 1vh) * 100)'
       }}
     >
-      <div className="max-w-6xl mx-auto w-full py-8 md:py-0">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center min-h-0">
+      <div className="max-w-6xl mx-auto w-full h-full flex items-center">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-16 items-center w-full">
          
           {/* Left Content */}
-          <div className={`transition-all duration-600 ease-out ${
+          <div className={`order-last lg:order-first transition-all duration-600 ease-out ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}>
-            <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-4 md:mb-8 transition-all duration-700 ease-out delay-75 ${
+            <h1 className={`text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-light leading-tight mb-3 md:mb-8 transition-all duration-700 ease-out delay-75 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
             }`}>
               Design is thinking<br />
@@ -95,18 +93,18 @@ const Hero = () => {
               digital experiences through research-driven design.
             </p>
            
-            <div className={`flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-6 transition-all duration-600 ease-out delay-225 ${
+            <div className={`flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 transition-all duration-600 ease-out delay-225 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
             }`}>
               <button
                 onClick={scrollToWork}
-                className="bg-black text-white px-6 md:px-8 py-3 text-sm hover:bg-gray-800 transition-colors duration-300 w-full sm:w-auto"
+                className="bg-black text-white px-6 md:px-8 py-2.5 md:py-3 text-sm hover:bg-gray-800 transition-colors duration-300 w-full sm:w-auto"
               >
                 View Work
               </button>
               <button
                 onClick={downloadCV}
-                className="border border-gray-300 px-6 md:px-8 py-3 text-sm hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 w-full sm:w-auto"
+                className="border border-gray-300 px-6 md:px-8 py-2.5 md:py-3 text-sm hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 w-full sm:w-auto"
               >
                 Download CV
               </button>
@@ -117,7 +115,7 @@ const Hero = () => {
           <div className={`relative order-first lg:order-last transition-all duration-700 ease-out delay-100 ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}>
-            <div className="aspect-[3/4] md:aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden group max-h-64 md:max-h-none">
+            <div className="aspect-[4/5] md:aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden group max-h-80 md:max-h-none mx-auto max-w-xs md:max-w-none">
               <img
                 src="/myPic2.png"
                 alt="Sandith Thenuwara"
