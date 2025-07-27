@@ -115,7 +115,7 @@ const Hero = () => {
           <div className={`relative order-first lg:order-last transition-all duration-700 ease-out delay-100 ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}>
-            <div className="aspect-[4/5] md:aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden group max-h-80 md:max-h-none mx-auto max-w-xs md:max-w-none">
+            <div className="aspect-[4/5] md:aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden group max-h-96 md:max-h-none w-full md:max-w-none">
               <img
                 src="/myPic2.png"
                 alt="Sandith Thenuwara"
