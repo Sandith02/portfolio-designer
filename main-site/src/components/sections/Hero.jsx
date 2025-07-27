@@ -65,7 +65,7 @@ const Hero = () => {
       className="px-4 md:px-12 flex items-center pt-24 pb-8 md:pt-20 md:pb-0"
       style={{
         minHeight: isMobile 
-          ? 'calc(100vh - 96px)' // Increased to account for larger navbar
+          ? 'calc(110vh - 96px)' // Increased to account for larger navbar
           : 'calc(var(--vh, 1vh) * 100)',
         height: isMobile 
           ? 'calc(100vh - 96px)'
