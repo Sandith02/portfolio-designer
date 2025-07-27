@@ -44,7 +44,7 @@ const Header = () => {
 
   const handleMySpaceClick = () => {
     // You can customize this to open a modal, navigate to a different page, etc.
-    window.open('https://portfolio-v1-rc82.vercel.app/', '_blank');
+    window.open('https://my-space-one-gamma.vercel.app/', '_blank');
   };
 
   const navItems = [
