@@ -93,7 +93,7 @@ const Header = () => {
               onClick={handleMySpaceClick}
               className="bg-black text-white px-4 py-2 text-xs font-medium rounded-full hover:bg-gray-800 transition-all duration-300 transform hover:scale-105"
             >
-              #MySpace
+              #mySpace
             </button>
           </div>
         </nav>
