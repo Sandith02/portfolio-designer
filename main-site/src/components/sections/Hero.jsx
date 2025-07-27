@@ -2,24 +2,37 @@ import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [viewportHeight, setViewportHeight] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Start immediately to reduce delay after splash
     setIsLoaded(true);
     
-    // Set initial viewport height
+    // Detect if it's mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    // Set CSS custom property for viewport height
     const setVH = () => {
-      const vh = window.innerHeight;
-      setViewportHeight(vh);
-      document.documentElement.style.setProperty('--vh', `${vh * 0.01}px`);
+      // Use window.innerHeight for more accurate mobile viewport
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
     };
 
     setVH();
+    
+    // Update on resize and orientation change
     window.addEventListener('resize', setVH);
-    window.addEventListener('orientationchange', setVH);
+    window.addEventListener('orientationchange', () => {
+      // Delay to let the browser finish orientation change
+      setTimeout(setVH, 100);
+    });
 
     return () => {
+      window.removeEventListener('resize', checkMobile);
       window.removeEventListener('resize', setVH);
       window.removeEventListener('orientationchange', setVH);
     };
@@ -49,27 +62,33 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className="px-4 md:px-12 flex items-center pt-20 md:pt-20"
-      style={{
-        minHeight: `calc(var(--vh, 1vh) * 100)`,
-        height: `calc(var(--vh, 1vh) * 100)`
+      className={`px-4 md:px-12 flex items-center pt-16 md:pt-20 ${
+        isMobile 
+          ? 'min-h-screen' 
+          : 'h-screen'
+      }`}
+      style={!isMobile ? {
+        height: 'calc(var(--vh, 1vh) * 100)'
+      } : {
+        minHeight: 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
+        height: 'calc(100dvh - 4rem)' // dvh is the dynamic viewport height, minus header
       }}
     >
-      <div className="max-w-6xl mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div className="max-w-6xl mx-auto w-full py-8 md:py-0">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center min-h-0">
          
           {/* Left Content */}
           <div className={`transition-all duration-600 ease-out ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}>
-            <h1 className={`text-4xl sm:text-5xl lg:text-6xl font-light leading-tight mb-6 md:mb-8 transition-all duration-700 ease-out delay-75 ${
+            <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-4 md:mb-8 transition-all duration-700 ease-out delay-75 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
             }`}>
               Design is thinking<br />
               made <span className="font-medium">visual</span>
             </h1>
            
-            <p className={`text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed transition-all duration-600 ease-out delay-150 ${
+            <p className={`text-sm md:text-lg text-gray-600 mb-4 md:mb-8 leading-relaxed transition-all duration-600 ease-out delay-150 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
             }`}>
               Creative Designer, brand strategist, UI/UX enthusiast, and Technologist crafting meaningful
@@ -95,10 +114,10 @@ const Hero = () => {
           </div>
 
           {/* Right Image */}
-          <div className={`relative transition-all duration-700 ease-out delay-100 ${
+          <div className={`relative order-first lg:order-last transition-all duration-700 ease-out delay-100 ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}>
-            <div className="aspect-[4/5] md:aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden group">
+            <div className="aspect-[3/4] md:aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden group max-h-64 md:max-h-none">
               <img
                 src="/myPic2.png"
                 alt="Sandith Thenuwara"
